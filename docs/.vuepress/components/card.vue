@@ -15,9 +15,9 @@
 <script>
 import { button } from '../../../packages/index'
 export default {
-  components:{
-    rButton:button
-  },
+  // components:{
+  //   "r-button":button
+  // },
   data(){
     return {
       

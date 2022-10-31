@@ -4,32 +4,32 @@
 
 import { injectComponentOption, ensureAsyncComponentsLoaded } from '@app/util'
 import rootMixins from '@internal/root-mixins'
-import GlobalLayout from "D:\\Study\\web\\rich-ui\\node_modules\\@vuepress\\core\\lib\\client\\components\\GlobalLayout.vue"
+import GlobalLayout from "E:\\work\\study\\rich-ui\\node_modules\\@vuepress\\core\\lib\\client\\components\\GlobalLayout.vue"
 
 injectComponentOption(GlobalLayout, 'mixins', rootMixins)
 export const routes = [
   {
-    name: "v-2f6710b1",
-    path: "/components/button.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-2f6710b1").then(next)
-    },
-  },
-  {
-    name: "v-22e3e9f9",
+    name: "v-09e3ea3b",
     path: "/components/install.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-22e3e9f9").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-09e3ea3b").then(next)
     },
   },
   {
-    name: "v-82cfe412",
+    name: "v-f8e38d1a",
+    path: "/components/button.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-f8e38d1a").then(next)
+    },
+  },
+  {
+    name: "v-67b4c9b9",
     path: "/guide/guide.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-82cfe412").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-67b4c9b9").then(next)
     },
   },
   {

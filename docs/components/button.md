@@ -1,18 +1,34 @@
-::: component 基础按钮
-最为基础的一些按钮
-``` html
-<r-button></r-button>
-```
 
-:::
-
-
-<!-- <template>
 <card>
-<div slot="title">基础按钮</div>
-<div slot="description">最为基础的一些按钮</div>
-<div slot="component">
+<!-- <template slot='component'>
 <r-button></r-button>
-</div>
-</card>
 </template> -->
+
+</card>
+```html
+<template>
+    <r-button></r-button>
+</template>
+<script>
+    export default {
+        data() {
+            return {
+                demo: 0
+            }
+        }
+    }
+</script>
+
+<style>
+    .demo {
+        color: red
+    }
+</style>
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+

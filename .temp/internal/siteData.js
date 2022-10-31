@@ -9,24 +9,24 @@ export const siteData = {
   "pages": [
     {
       "frontmatter": {},
-      "regularPath": "/components/button.html",
-      "relativePath": "components/button.md",
-      "key": "v-2f6710b1",
-      "path": "/components/button.html"
+      "regularPath": "/components/install.html",
+      "relativePath": "components/install.md",
+      "key": "v-09e3ea3b",
+      "path": "/components/install.html"
     },
     {
       "frontmatter": {},
-      "regularPath": "/components/install.html",
-      "relativePath": "components/install.md",
-      "key": "v-22e3e9f9",
-      "path": "/components/install.html"
+      "regularPath": "/components/button.html",
+      "relativePath": "components/button.md",
+      "key": "v-f8e38d1a",
+      "path": "/components/button.html"
     },
     {
       "title": "指南",
       "frontmatter": {},
       "regularPath": "/guide/guide.html",
       "relativePath": "guide/guide.md",
-      "key": "v-82cfe412",
+      "key": "v-67b4c9b9",
       "path": "/guide/guide.html"
     }
   ],
