@@ -9,7 +9,7 @@ export const buildConfig = {
             path:path.resolve(outDir,'es')
         },
         bundle:{
-            path:'vue-ljj-components/es'
+            path:'rich-plus/es'
         }
     },
     cjs:{
@@ -20,7 +20,7 @@ export const buildConfig = {
             path:path.resolve(outDir,'lib')
         },
         bundle:{
-            path:'vue-ljj-components/lib'
+            path:'rich-plus/lib'
         }
     }
 }
