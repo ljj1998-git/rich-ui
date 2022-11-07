@@ -8,7 +8,7 @@
 import { computed, defineComponent } from "vue";
 import { iconProps } from "./icon";
 export default defineComponent({
-  name: "KIcon",
+  name: "r-icon",
   props: iconProps,
   setup(props) {
     const style = computed(() => {
