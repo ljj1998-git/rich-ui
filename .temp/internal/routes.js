@@ -4,32 +4,72 @@
 
 import { injectComponentOption, ensureAsyncComponentsLoaded } from '@app/util'
 import rootMixins from '@internal/root-mixins'
-import GlobalLayout from "E:\\work\\study\\rich-ui\\node_modules\\@vuepress\\core\\lib\\client\\components\\GlobalLayout.vue"
+import GlobalLayout from "D:\\Study\\web\\rich-ui\\node_modules\\@vuepress\\core\\lib\\client\\components\\GlobalLayout.vue"
 
 injectComponentOption(GlobalLayout, 'mixins', rootMixins)
 export const routes = [
   {
-    name: "v-09e3ea3b",
-    path: "/components/install.html",
+    name: "v-928b0ccc",
+    path: "/en/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-09e3ea3b").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-928b0ccc").then(next)
     },
   },
   {
-    name: "v-f8e38d1a",
-    path: "/components/button.html",
+    path: "/en/index.html",
+    redirect: "/en/"
+  },
+  {
+    name: "v-7ec7eef8",
+    path: "/en/components/install.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-f8e38d1a").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-7ec7eef8").then(next)
     },
   },
   {
-    name: "v-67b4c9b9",
-    path: "/guide/guide.html",
+    name: "v-26ea9634",
+    path: "/en/components/button.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-67b4c9b9").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-26ea9634").then(next)
+    },
+  },
+  {
+    name: "v-7d0b3a38",
+    path: "/en/guide/guide.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-7d0b3a38").then(next)
+    },
+  },
+  {
+    name: "v-1c8d7d7a",
+    path: "/zh/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-1c8d7d7a").then(next)
+    },
+  },
+  {
+    path: "/zh/index.html",
+    redirect: "/zh/"
+  },
+  {
+    name: "v-a284cfb8",
+    path: "/zh/components/install.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-a284cfb8").then(next)
+    },
+  },
+  {
+    name: "v-7801839c",
+    path: "/zh/components/button.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-7801839c").then(next)
     },
   },
   {

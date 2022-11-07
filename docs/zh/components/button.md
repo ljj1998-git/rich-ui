@@ -6,6 +6,7 @@
 ```html
 <template>
   <r-button></r-button>
+  <r-earth></r-earth>
 </template>
 <script>
 export default {
@@ -26,6 +27,7 @@ export default {
 
 ### 基础用法2
 ::: demo 此处放置代码示例的描述信息，支持 `Markdown` 语法，**描述信息只支持单行**
+
 ```html
 <template>
   <r-button></r-button>

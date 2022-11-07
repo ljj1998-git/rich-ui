@@ -1,7 +1,8 @@
 // 导入组件
 import button from "./button";
+import earth from "./three/earth";
 // 存储组件列表
-const components = [button];
+const components = [button, earth];
 // 定义 install 方法，接收 Vue 作为参数。如果使用 use 注册插件，则所有的组件都将被注册
 const install = function (Vue) {
   // 判断是否安装
@@ -20,4 +21,13 @@ export default {
   install,
   // 以下是具体的组件列表
   button,
+  earth,
 };
+
+// import Vue from 'vue';
+// const requireComponent = require.context('@components/common', false, /\.vue$/);
+// requireComponent.keys().forEach((fileName) => {
+//   const componentConfig = requireComponent(fileName);
+//   const componentName = fileName.replace(/^\.\//, '').replace(/\.\w+$/, '');
+//   Vue.component(componentName, componentConfig.default || componentConfig);
+// });

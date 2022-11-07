@@ -1,2 +1,1 @@
-import "E:\\work\\study\\rich-ui\\node_modules\\@vuepress\\core\\lib\\node\\internal-plugins\\style\\client.js"
-export default {}
+export { default } from "D:\\Study\\web\\rich-ui\\docs\\.vuepress\\enhanceApp.js"
