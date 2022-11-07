@@ -1,1 +1,1 @@
-export { default } from "D:\\Study\\web\\rich-ui\\docs\\.vuepress\\enhanceApp.js"
+export { default } from "E:\\work\\study\\rich-ui\\docs\\.vuepress\\enhanceApp.js"

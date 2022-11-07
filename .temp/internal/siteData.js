@@ -31,7 +31,7 @@ export const siteData = {
       },
       "regularPath": "/en/",
       "relativePath": "en/README.md",
-      "key": "v-928b0ccc",
+      "key": "v-5b89f218",
       "path": "/en/",
       "headers": [
         {
@@ -42,18 +42,11 @@ export const siteData = {
       ]
     },
     {
-      "frontmatter": {},
-      "regularPath": "/en/components/install.html",
-      "relativePath": "en/components/install.md",
-      "key": "v-7ec7eef8",
-      "path": "/en/components/install.html"
-    },
-    {
       "title": "Button 按钮",
       "frontmatter": {},
       "regularPath": "/en/components/button.html",
       "relativePath": "en/components/button.md",
-      "key": "v-26ea9634",
+      "key": "v-572cc428",
       "path": "/en/components/button.html",
       "headers": [
         {
@@ -74,12 +67,11 @@ export const siteData = {
       ]
     },
     {
-      "title": "指南",
       "frontmatter": {},
-      "regularPath": "/en/guide/guide.html",
-      "relativePath": "en/guide/guide.md",
-      "key": "v-7d0b3a38",
-      "path": "/en/guide/guide.html"
+      "regularPath": "/en/components/install.html",
+      "relativePath": "en/components/install.md",
+      "key": "v-0af74f46",
+      "path": "/en/components/install.html"
     },
     {
       "title": "Home",
@@ -105,7 +97,7 @@ export const siteData = {
       },
       "regularPath": "/zh/",
       "relativePath": "zh/README.md",
-      "key": "v-1c8d7d7a",
+      "key": "v-7d461410",
       "path": "/zh/",
       "headers": [
         {
@@ -116,18 +108,19 @@ export const siteData = {
       ]
     },
     {
+      "title": "指南",
       "frontmatter": {},
-      "regularPath": "/zh/components/install.html",
-      "relativePath": "zh/components/install.md",
-      "key": "v-a284cfb8",
-      "path": "/zh/components/install.html"
+      "regularPath": "/en/guide/guide.html",
+      "relativePath": "en/guide/guide.md",
+      "key": "v-6957c526",
+      "path": "/en/guide/guide.html"
     },
     {
       "title": "Button 按钮",
       "frontmatter": {},
       "regularPath": "/zh/components/button.html",
       "relativePath": "zh/components/button.md",
-      "key": "v-7801839c",
+      "key": "v-3ab8da44",
       "path": "/zh/components/button.html",
       "headers": [
         {
@@ -146,6 +139,13 @@ export const siteData = {
           "slug": "基础用法2"
         }
       ]
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/zh/components/install.html",
+      "relativePath": "zh/components/install.md",
+      "key": "v-0dce4234",
+      "path": "/zh/components/install.html"
     }
   ],
   "themeConfig": {

@@ -1,9 +1,9 @@
-import m0 from "D:\\Study\\web\\rich-ui\\.temp\\app-enhancers\\0.js"
-import m1 from "D:\\Study\\web\\rich-ui\\.temp\\app-enhancers\\1.js"
-import m2 from "D:\\Study\\web\\rich-ui\\.temp\\app-enhancers\\data-block.js"
-import m3 from "D:\\Study\\web\\rich-ui\\.temp\\app-enhancers\\global-components-1.js"
-import m4 from "D:\\Study\\web\\rich-ui\\.temp\\app-enhancers\\2.js"
-import m5 from "D:\\Study\\web\\rich-ui\\.temp\\app-enhancers\\3.js"
+import m0 from "E:\\work\\study\\rich-ui\\.temp\\app-enhancers\\0.js"
+import m1 from "E:\\work\\study\\rich-ui\\.temp\\app-enhancers\\1.js"
+import m2 from "E:\\work\\study\\rich-ui\\.temp\\app-enhancers\\data-block.js"
+import m3 from "E:\\work\\study\\rich-ui\\.temp\\app-enhancers\\global-components-1.js"
+import m4 from "E:\\work\\study\\rich-ui\\.temp\\app-enhancers\\2.js"
+import m5 from "E:\\work\\study\\rich-ui\\.temp\\app-enhancers\\3.js"
 
 export default [
   m0,
