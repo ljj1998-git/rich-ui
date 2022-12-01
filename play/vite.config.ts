@@ -9,7 +9,7 @@ export default defineConfig({
         vue(),
         AutoImport({
             imports: ["vue", "vue-router"], //自动引入vue的ref、toRefs、onmounted等，无需在页面中再次引入
-            dts: "/AutoImport.config.ts" // 生成AutoImport.config.ts的声明文件
+            dts: "src/auto-import.d.ts" // 生成声明文件
         }),
     ],
     resolve: {

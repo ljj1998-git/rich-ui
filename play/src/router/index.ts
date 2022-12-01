@@ -12,6 +12,17 @@ const router = createRouter({
           path: "/icon",
           name: "icon",
           component: () => import("@/views/icon.vue"),
+          meta:{
+            label:'图标'
+          }
+        },
+        {
+          path: "/icon",
+          name: "icon",
+          component: () => import("@/views/icon.vue"),
+          meta:{
+            label:'图标2'
+          }
         }
       ],
     },
