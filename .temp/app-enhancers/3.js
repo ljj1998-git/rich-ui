@@ -1,0 +1,1 @@
+export { default } from "E:\\work\\study\\rich-ui\\node_modules\\vuepress-plugin-demo-container\\src\\enhanceAppFile.js"

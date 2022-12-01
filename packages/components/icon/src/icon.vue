@@ -1,5 +1,5 @@
 <template>
-  <i class="k-icon" :style="style">
+  <i class="r-icon" :style="style">
     <slot></slot>
   </i>
 </template>

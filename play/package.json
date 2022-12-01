@@ -9,7 +9,12 @@
   "license": "ISC",
   "dependencies": {
     "@vitejs/plugin-vue": "^3.1.2",
+    "ant-design-vue": "^3.2.15",
     "vite": "^3.1.8",
-    "vue": "^3.2.25"
+    "vue": "^3.2.25",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "unplugin-auto-import": "^0.12.0"
   }
 }
