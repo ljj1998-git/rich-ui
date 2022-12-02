@@ -1,49 +1,31 @@
 <template>
   <a-layout has-sider>
-    <a-layout-sider
-      :style="{
-        overflow: 'auto',
-        height: '100vh',
-        position: 'fixed',
-        left: 0,
-        top: 0,
-        bottom: 0,
-      }"
-    >
+    <a-layout-sider :style="{
+      overflow: 'auto',
+      height: '100vh',
+      position: 'fixed',
+      left: 0,
+      top: 0,
+      bottom: 0,
+    }">
       <div class="logo" />
       <a-menu v-model:selectedKeys="selectedKeys" theme="dark" mode="inline">
-        <a-menu-item
-          :key="index"
-          v-for="(route, index) in routes"
-          @click="handlePush(route)"
-        >
+        <a-menu-item :key="index" v-for="(route, index) in routes" @click="handlePush(route)">
           <appstore-outlined />
           <span class="nav-text">{{ route.label }}</span>
         </a-menu-item>
       </a-menu>
     </a-layout-sider>
     <a-layout :style="{ marginLeft: '200px' }">
-      <a-layout-header class="layout-header" />
-      <a-layout-content :style="{ margin: '64px 0 0', overflow: 'initial' }">
-        <div :style="{ margin: '16px', padding: '24px', background: '#fff' }">
-          <!-- <div v-for="item in 1000">133</div> -->
-          <router-view />
-        </div>
+      <a-layout-header class="layout-header z-50" />
+      <a-layout-content class="mt-16">
+        <router-view />
       </a-layout-content>
     </a-layout>
   </a-layout>
 </template>
 <script lang="ts" setup>
-import {
-  UserOutlined,
-  VideoCameraOutlined,
-  UploadOutlined,
-  BarChartOutlined,
-  CloudOutlined,
-  AppstoreOutlined,
-  TeamOutlined,
-  ShopOutlined,
-} from "@ant-design/icons-vue";
+import { AppstoreOutlined, } from "@ant-design/icons-vue";
 import getAllRoute, { IRoute } from "../hooks/getAllRoute";
 const selectedKeys = ref([0]);
 const router = useRouter()

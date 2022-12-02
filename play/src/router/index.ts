@@ -17,11 +17,11 @@ const router = createRouter({
           }
         },
         {
-          path: "/icon",
-          name: "icon",
-          component: () => import("@/views/icon.vue"),
+          path: "/button",
+          name: "button",
+          component: () => import("@/views/button.vue"),
           meta:{
-            label:'图标2'
+            label:'按钮'
           }
         }
       ],

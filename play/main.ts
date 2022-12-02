@@ -4,6 +4,7 @@ import App from './app.vue';
 import router from './src/router'
 import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
+import './src/assets/css/tailwind.css'
 
 import RIcon from '@rich-ui/components/icon'
 
