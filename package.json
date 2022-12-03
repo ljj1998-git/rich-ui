@@ -35,6 +35,12 @@
     "@rich-ui/components": "workspace:^1.0.0",
     "@rich-ui/theme-chalk": "workspace:^1.0.0",
     "@rich-ui/utils": "workspace:^1.0.0",
+    "@rollup/plugin-commonjs": "^23.0.3",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@vue/compiler-sfc": "^3.2.45",
+    "rollup": "^3.5.1",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "rollup-plugin-vue": "^6.0.0",
     "sass": "^1.55.0"
   }
 }

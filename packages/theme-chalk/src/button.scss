@@ -1,0 +1,9 @@
+@use './mixins/mixins.scss'as *;
+
+.#{$namespace}-button{
+    color: red;
+}
+
+.#{$namespace}-button--primary {
+    color: skyblue;
+}

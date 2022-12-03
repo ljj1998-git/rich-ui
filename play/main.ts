@@ -6,11 +6,14 @@ import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
 import './src/assets/css/tailwind.css'
 
-import RIcon from '@rich-ui/components/icon'
+import Rbutton from '../packages/components/button';
+import '../packages/theme-chalk/src/index.scss';
+// import RIcon from '../dist'
 
 const app = createApp(App)
 
 app.use(router)
-app.use(RIcon)
+app.use(Rbutton)
 app.use(Antd)
 app.mount('#app')
+

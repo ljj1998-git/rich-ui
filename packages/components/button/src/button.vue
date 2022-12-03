@@ -1,19 +1,28 @@
 <template>
-    <button type="button" :class="type ? 'r-button--' + type : ''">
-        <slot></slot>
-    </button>
+    <button :class="[
+        ns.ns(),
+        ns.m(type),
+    ]
+    " :style="buttonStyle">12</button>
 </template>
   
 <script lang="ts">
 import { computed, defineComponent } from "vue";
-import { buttonProps } from "./button";
+import { buttonProps, useButtonCustomStyle } from "./button";
+import { UseNamespace } from '@rich-ui/utils/use-namespace'
 export default defineComponent({
     name: "r-button",
     props: buttonProps,
     setup(props) {
         const { type } = props
+        const buttonStyle = useButtonCustomStyle(props)
+        const ns = new UseNamespace('button')
+        console.log(ns);
+
         return {
-            type
+            type,
+            buttonStyle,
+            ns
         };
     },
 });

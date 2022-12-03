@@ -6,4 +6,9 @@ export const buttonProps = {
     },
 }
 
-export type IconProps = ExtractPropTypes<typeof buttonProps>
+export type ButtonProps = ExtractPropTypes<typeof buttonProps>
+
+
+export const useButtonCustomStyle = (props:ButtonProps) =>{
+    return {}
+}

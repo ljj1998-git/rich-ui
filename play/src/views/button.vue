@@ -3,7 +3,8 @@
         <template #content>
             <a-collapse v-model:activeKey="activeKey">
                 <a-collapse-panel :key="1" header="This is panel header 1">
-                    <r-button>25</r-button>
+                    <r-button type="primary">25</r-button>
+
                 </a-collapse-panel>
             </a-collapse>
         </template>
