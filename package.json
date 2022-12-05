@@ -41,6 +41,7 @@
     "rollup": "^3.5.1",
     "rollup-plugin-typescript2": "^0.34.1",
     "rollup-plugin-vue": "^6.0.0",
-    "sass": "^1.55.0"
+    "sass": "^1.55.0",
+    "three": "^0.147.0"
   }
 }

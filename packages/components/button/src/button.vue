@@ -1,9 +1,11 @@
 <template>
-    <button :class="[
+    <div>
+        <button :class="[
         ns.ns(),
         ns.m(type),
     ]
     " :style="buttonStyle">12</button>
+    </div>
 </template>
   
 <script lang="ts">

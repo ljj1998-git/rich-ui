@@ -1,0 +1,250 @@
+@use 'sass:math';
+@use 'sass:map';
+@use '../mixins/function.scss' as *;
+// types
+$types: primary, success, warning, danger, error, info;
+// Common
+$common-component-size: () !default;
+$common-component-size: map.merge(
+  (
+    'large': 40px,
+    'default': 32px,
+    'small': 24px,
+  ),
+  $common-component-size
+);
+
+$text-color: () !default;
+$text-color: map.merge(
+  (
+    'primary': #303133,
+    'regular': red,
+    'secondary': #909399,
+    'placeholder': #a8abb2,
+    'disabled': #c0c4cc,
+  ),
+  $text-color
+);
+
+$border-color: () !default;
+$border-color: map.merge(
+  (
+    '': #3e5da5,
+    'light': #e4e7ed,
+    'lighter': #ebeef5,
+    'extra-light': #f2f6fc,
+    'dark': #d4d7de,
+    'darker': #cdd0d6,
+  ),
+  $border-color
+);
+
+// Typography
+$font-family: () !default;
+$font-family: map.merge(
+  (
+    // default family
+    '':
+      "'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif"
+  ),
+  $font-family
+);
+
+// zIndex
+$z-index: () !default;
+$z-index: map.merge(
+  (
+    'normal': 1,
+    'top': 1000,
+    'popper': 2000,
+  ),
+  $z-index
+);
+
+// 圆角
+$border-radius: () !default;
+$border-radius: map.merge(
+  (
+    'base': 4px,
+    'small': 2px,
+    'round': 20px,
+    'circle': 100%,
+  ),
+  $border-radius
+);
+
+// 动画
+$transition: () !default;
+$transition: map.merge(
+  (
+    'all': all getCssVar('transition-duration')
+      getCssVar('transition-function-ease-in-out-bezier'),
+    'fade': opacity getCssVar('transition-duration')
+      getCssVar('transition-function-fast-bezier'),
+    'md-fade': (
+      transform getCssVar('transition-duration')
+        getCssVar('transition-function-fast-bezier'),
+      opacity getCssVar('transition-duration')
+        getCssVar('transition-function-fast-bezier'),
+    ),
+    'fade-linear': opacity getCssVar('transition-duration-fast') linear,
+    'border': border-color getCssVar('transition-duration-fast')
+      getCssVar('transition-function-ease-in-out-bezier'),
+    'box-shadow': box-shadow getCssVar('transition-duration-fast')
+      getCssVar('transition-function-ease-in-out-bezier'),
+    'color': color getCssVar('transition-duration-fast')
+      getCssVar('transition-function-ease-in-out-bezier'),
+  ),
+  $transition
+);
+
+// 动画时间
+$transition-duration: () !default;
+$transition-duration: map.merge(
+  (
+    '': 0.3s,
+    'fast': 0.2s,
+  ),
+  $transition-duration
+);
+
+// 动画速率
+$transition-function: () !default;
+$transition-function: map.merge(
+  (
+    'ease-in-out-bezier': cubic-bezier(0.645, 0.045, 0.355, 1),
+    'fast-bezier': cubic-bezier(0.23, 1, 0.32, 1),
+  ),
+  $transition-function
+);
+
+$common-component-size: () !default;
+$common-component-size: map.merge(
+  (
+    'large': 40px,
+    'default': 32px,
+    'small': 24px,
+  ),
+  $common-component-size
+);
+
+// Background
+$bg-color: () !default;
+$bg-color: map.merge(
+  (
+    '': #ffffff,
+    'page': #f2f3f5,
+    'overlay': #ffffff,
+  ),
+  $bg-color
+);
+
+$font-size: () !default;
+$font-size: map.merge(
+  (
+    'extra-large': 20px,
+    'large': 18px,
+    'medium': 16px,
+    'base': 14px,
+    'small': 13px,
+    'extra-small': 12px,
+  ),
+  $font-size
+);
+
+$border-color: () !default;
+$border-color: map.merge(
+  (
+    '': #dcdfe6,
+    'light': #e4e7ed,
+    'lighter': #ebeef5,
+    'extra-light': #f2f6fc,
+    'dark': #d4d7de,
+    'darker': #cdd0d6,
+  ),
+  $border-color
+);
+
+$fill-color: () !default;
+$fill-color: map.merge(
+  (
+    '': #f0f2f5,
+    'light': #f5f7fa,
+    'lighter': #fafafa,
+    'extra-light': #fafcff,
+    'dark': #ebedf0,
+    'darker': #e6e8eb,
+    'blank': #ffffff,
+  ),
+  $fill-color
+);
+
+/**
+ * Color
+ * map.deep-merge 深度合并
+ */
+$colors: () !default;
+$colors: map.deep-merge( 
+  (
+    'white': #ffffff,
+    'black': #000000,
+    'primary': (
+      'base': #407cff,
+    ),
+    'success': (
+      'base': #67c23a,
+    ),
+    'warning': (
+      'base': #e6a23c,
+    ),
+    'danger': (
+      'base': #f56c6c,
+    ),
+    'error': (
+      'base': #f56c6c,
+    ),
+    'info': (
+      'base': #909399,
+    ),
+  ),
+  $colors
+);
+
+$color-white: map.get($colors, 'white') !default;
+$color-black: map.get($colors, 'black') !default;
+$color-primary: map.get($colors, 'primary', 'base') !default;
+$color-success: map.get($colors, 'success', 'base') !default;
+$color-warning: map.get($colors, 'warning', 'base') !default;
+$color-danger: map.get($colors, 'danger', 'base') !default;
+$color-error: map.get($colors, 'error', 'base') !default;
+$color-info: map.get($colors, 'info', 'base') !default;
+
+// Button
+$button: () !default;
+$button: map.merge(
+  (
+    'font-weight': getCssVar('font-weight-primary'),
+    'border-color': getCssVar('border-color'),
+    'bg-color': getCssVar('fill-color', 'blank'),
+    'text-color': getCssVar('text-color', 'regular'),
+    'disabled-text-color': getCssVar('disabled-text-color'),
+    'disabled-bg-color': getCssVar('fill-color', 'blank'),
+    'disabled-border-color': getCssVar('border-color-light'),
+    'divide-border-color': rgba($color-white, 0.5),
+    'hover-text-color': getCssVar('color-primary'),
+    'hover-bg-color': getCssVar('color-primary', 'light-9'),
+    'hover-border-color': getCssVar('color-primary-light-7'),
+    'active-text-color': getCssVar('button-hover-text-color'),
+    'active-border-color': getCssVar('color-primary'),
+    'active-bg-color': getCssVar('button', 'hover-bg-color'),
+    'outline-color': getCssVar('color-primary', 'light-5'),
+    'hover-link-text-color': getCssVar('color-info'),
+    'active-color': getCssVar('text-color', 'primary'),
+  ),
+  $button
+);
+$button-text-color: () !default;
+$button-border-color: () !default;
+// Input
+$input-height: () !default;
+$input-height: map.merge($common-component-size, $input-height);

@@ -23,6 +23,14 @@ const router = createRouter({
           meta:{
             label:'按钮'
           }
+        },
+        {
+          path: "/earth",
+          name: "earth",
+          component: () => import("@/views/earth.vue"),
+          meta:{
+            label:'three-地球'
+          }
         }
       ],
     },

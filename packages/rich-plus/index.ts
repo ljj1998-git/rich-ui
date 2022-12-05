@@ -4,7 +4,7 @@ import type { App } from "vue";
 
 // const components = [WIcon,WButton];
 
-const install = (app: App) => {
+const install = (app: App, ...options: any[]) => {
   // 每个组件在写的时候都提供了install方法
 
   // 有的是组件，有的可能是指令 xxx.install = () => { app.directive() }
@@ -21,4 +21,4 @@ export default {
 };
 
 // import { WIcon } from 'w-plus
-export * from "@rich-ui/components";
+// export * from "@rich-ui/components";

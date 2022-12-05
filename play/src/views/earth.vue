@@ -2,12 +2,9 @@
     <k-card>
         <template #content>
             <a-collapse v-model:activeKey="activeKey">
-                <a-collapse-panel :key="index" header="This is panel header 1" v-for="(item, index) in 40">
-                    <r-icon color="red" :size="18">hello</r-icon>
-                </a-collapse-panel>
-                <a-collapse-panel name="dasd" :key="19" header="This is panel header 2">
-                    <a name="icon"></a>
-                    <r-icon color="red" :size="18">hello2</r-icon>
+                <a-collapse-panel :key="1" header="This is panel header 1">
+                    <r-earth></r-earth>
+
                 </a-collapse-panel>
             </a-collapse>
         </template>
@@ -24,7 +21,6 @@
 </template>
 
 <script lang="ts" setup>
-// import { RIcon } from '../../../packages/components'
 const text = `A dog is a type of domesticated animal.Known for its loyalty and faithfulness,it can be found as a welcome guest in many households across the world.`;
 const activeKey = ref(['1']);
 watch(activeKey, val => {
