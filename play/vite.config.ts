@@ -11,14 +11,17 @@ import {
     HeadlessUiResolver,
     ElementUiResolver
 } from 'unplugin-vue-components/resolvers'
+// 
+import DefineOptions from 'unplugin-vue-define-options/vite';
 
 const path = require('path')
 
 export default defineConfig({
     plugins: [
         vue(),
+        DefineOptions(),
         AutoImport({
-            imports: ["vue", "vue-router"], //自动引入vue的ref、toRefs、onmounted等，无需在页面中再次引入
+            imports: ["vue", "vue-router",], //自动引入vue的ref、toRefs、onmounted等，无需在页面中再次引入
             dts: "src/auto-import.d.ts" // 生成声明文件
         }),
         Components({

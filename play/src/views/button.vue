@@ -2,16 +2,25 @@
     <k-card>
         <template #content>
             <a-collapse v-model:activeKey="activeKey">
-                <a-collapse-panel :key="1" header="This is panel header 1">
-                    <r-button type="primary">25</r-button>
-
+                <a-collapse-panel :key="1" header="基础用法">
+                    <div class="flex">
+                        <a name="base"></a>
+                        <r-button type="default">25</r-button>
+                        <r-button type="primary">25</r-button>
+                        <r-button type="success">25</r-button>
+                    </div>
+                </a-collapse-panel>
+                <a-collapse-panel :key="2" header="按钮禁用">
+                    <a name="disabled"></a>
+                    <r-button type="primary" disabled>25</r-button>
                 </a-collapse-panel>
             </a-collapse>
         </template>
 
         <template #catalogue>
             <a-anchor>
-                <a-anchor-link href="#icon" title="字体" />
+                <a-anchor-link href="#base" title="基础用法" />
+                <a-anchor-link href="#disabled" title="按钮禁用" />
             </a-anchor>
 
         </template>

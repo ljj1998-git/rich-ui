@@ -14,13 +14,7 @@
 
 @mixin set-css-color-rgb($type) {
     $color: map.get($colors, $type, 'base');
-    @include set-css-var-value(('color', $type, 'rgb'),
-        #{red($color),
- green($color),
-        blue($color)
-    }
-
-);
+    @include set-css-var-value(('color', $type, 'rgb'), #{red($color),green($color),blue($color)});
 }
 
 @mixin set-css-color-type($colors, $type) {
@@ -62,4 +56,14 @@
             #{getCssVarName($name, $attribute)}: #{$value};
         }
     }
+}
+
+// generate css var from existing css var
+// for example:
+// @include css-var-from-global(('button', 'text-color'), ('color', $type))
+// --r-button-text-color: var(--r-color-#{$type});
+@mixin css-var-from-global($var, $gVar) {
+    $varName: joinVarName($var);
+    $gVarName: joinVarName($gVar);
+    #{$varName}: var(#{$gVarName});
 }

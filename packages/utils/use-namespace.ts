@@ -10,6 +10,7 @@ const _bem = (namespace: string, block: string, blockSuffix: string, element: st
 
 export class UseNamespace {
     private defaultNamespace = 'r'
+    private statePrefix = 'is-'
     public block: string
     constructor(block: string) {
         this.block = block
@@ -24,5 +25,10 @@ export class UseNamespace {
 
     m(modifier = '') {
         return _bem(this.defaultNamespace, this.block, '', '', modifier)
+    }
+
+    is(name: string, ...args: [boolean | undefined] | []) {
+        const state = args.length >= 1 ? args[0]! : true
+        return name && state ? `${this.statePrefix}${name}` : ''
     }
 }
