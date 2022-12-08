@@ -4,6 +4,10 @@ export const buttonProps = {
     type: {
         type: String,
     },
+    size:{
+        type:String,
+        default:'default'
+    },
     disabled: {
         type: Boolean,
         default: false,

@@ -3,9 +3,10 @@
         <button :class="[
             ns.ns(),
             ns.m(type),
+            ns.m(size),
             ns.is('disabled', disabled),
         ]
-        " :style="buttonStyle">12</button>
+        " :style="buttonStyle">123</button>
     </div>
 </template>
   
@@ -17,7 +18,7 @@ defineOptions({
 });
 
 const props = defineProps(buttonProps)
-const { type, disabled } = props
+const { type,size, disabled } = props
 const buttonStyle = useButtonCustomStyle(props)
 const ns = new UseNamespace('button')
 console.log(ns);

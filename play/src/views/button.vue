@@ -5,9 +5,9 @@
                 <a-collapse-panel :key="1" header="基础用法">
                     <div class="flex">
                         <a name="base"></a>
-                        <r-button type="default">25</r-button>
-                        <r-button type="primary">25</r-button>
-                        <r-button type="success">25</r-button>
+                        <r-button type="default" size="large">25</r-button>
+                        <r-button type="primary">225</r-button>
+                        <r-button type="success" size="small">25</r-button>
                     </div>
                 </a-collapse-panel>
                 <a-collapse-panel :key="2" header="按钮禁用">
