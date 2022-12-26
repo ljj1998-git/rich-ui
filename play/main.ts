@@ -9,8 +9,12 @@ import './src/assets/css/tailwind.css'
 const app = createApp(App)
 
 import '@rich-ui/theme-chalk/src/index.scss';
-import { RIcon, RButton, REarth } from '@rich-ui/components'
-app.use(RIcon as any).use(RButton as any).use(REarth as any)
+import { RIcon, RButton, REarth, RHomePage } from '@rich-ui/components'
+app
+    .use(RIcon as any)
+    .use(RButton as any)
+    .use(REarth as any)
+    .use(RHomePage as any)
 
 // import richUi from '../dist/index.esm.js'
 // import '../dist/theme-chalk/css/index.css'

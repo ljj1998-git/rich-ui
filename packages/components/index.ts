@@ -2,6 +2,7 @@
 export * from './icon'
 export * from './button'
 export * from './earth'
+export * from './homePage'
 
 // import { App } from 'vue'
 // const components = [RIcon,RButton]
